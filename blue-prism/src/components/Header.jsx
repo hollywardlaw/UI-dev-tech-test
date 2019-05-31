@@ -11,11 +11,11 @@ const Header = props => {
       <header className="header">
 
         <FiMenu className="menu" />
-
+        <IoIosSearch className="search" />
         <form className="form">
-          <IoIosSearch />
-          <label>Search</label><br></br>
-          <input type="search" placeholder="Text input" required />
+
+          <label className="label">Search</label><br></br>
+          <input className="input" type="search" required />
         </form>
         <FiMoreHorizontal className="more" />
       </header>
