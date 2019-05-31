@@ -6,7 +6,7 @@
     grid-template-rows: 20% 80%;
     grid-template-areas:
       'header'
-      'body';
+      'tasks';
 }
 
 .header {
@@ -46,13 +46,15 @@
 
 .header .form {
   grid-area: form;
-  align-self: center;
+}
+
+.form {
+    align-self: center;
   justify-self: left;
 text-align: left;
-border-bottom: 1px lightgrey solid;
-width: 100%;
+
  padding: 0;
-  margin: 0;
+  margin: 1em;
 }
 
 .input {
@@ -60,13 +62,22 @@ width: 100%;
   color: rgba(0, 0, 0, 0.6);
   font-family: sans-serif;
   font-size: 1.5em;
+  border-bottom: 1px lightgrey solid;
+width: 20em;
 }
 
 .input:focus {
-  border: none;
+  border-bottom: 1px lightgrey solid;
   outline: none;
 }
 
+.text-input {
+  width: 20em;
+  border: none;
+  font-family: sans-serif;
+  color: black;
+  font-size: 18px;
+}
 
 .header .more {
   grid-area: more;
@@ -81,4 +92,19 @@ width: 100%;
   color:#3F7FBF;
    vertical-align: middle;
    font-size: 2em;
+}
+
+.tasks {
+grid-area: tasks;
+margin-left: 25em;
+margin-right: 25em;
+margin-top: 5em;
+margin-bottom: 5em;
+}
+
+.task {
+  border: 1px grey solid;
+  border-radius: 5px;
+  box-shadow: -3px 3px 7px #888888;
+  height: 9em;
 }
