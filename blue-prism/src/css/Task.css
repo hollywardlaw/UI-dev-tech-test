@@ -40,7 +40,7 @@
   display: block;
   height: 100%; 
   border-radius: 10px;
-  background-color: #275685;
+  background-color: #3F7FBF;
   position: relative;
   overflow: hidden;
   animation: expandWidth 1s linear; 
@@ -70,6 +70,7 @@
   padding: 0.2em;
   color: grey;
   margin-left: 55%;
+  z-index: 1;
 }
 
 .task .pause {
@@ -82,4 +83,27 @@
   padding: 0.2em;
   color: #275685;
   margin-left: 55%;
+  z-index: 1;
+}
+
+.task .inspect .gradient-bar {
+  height: 35px;
+  width: 100%;
+	background-image: linear-gradient(to right, #3F7FBF 75%, lightblue);
+  border-radius: 10px;
+  align-self: center;
+}
+
+.list {
+  list-style: none;
+  font-family: sans-serif;
+  padding-top: 5px;
+  margin: 0;
+  font-size: 10px;
+}
+
+ul li {
+  display:inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
 }
