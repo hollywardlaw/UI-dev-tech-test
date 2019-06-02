@@ -95,31 +95,52 @@ width: 18em;
 
 .tasks {
 grid-area: tasks;
-margin-left: 22em;
-margin-right: 22em;
+margin-left: 15em;
+margin-right: 15em;
 margin-top: 5em;
 margin-bottom: 5em;
 display: flex;
-flex-direction: row;
+flex-direction: column;
+overflow: scroll;
 }
 
 .task {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 4em;
+  align-self: center;
+  justify-self: center;
+  width: 80%;
   border: 1px grey solid;
   border-radius: 8px;
   box-shadow: -3px 3px 7px #888888;
   height: 11em;
   display: grid;
-  grid-template-columns: 73% 28%;
-  grid-template-areas: "form controls";
+  grid-template-columns: 70% 5% 25%;
+  grid-template-areas: "form play controls";
   overflow: hidden;
 }
 
 .task .form {
   grid-area: form;
 }
+ 
+.task .play {
+  grid-area: play;
+  align-self: center;
+  font-size: 1.5em;
+  background-color: white;
+  border: 1px grey solid;
+  border-radius: 100%;
+  padding: 0.2em;
+  color: grey;
+  margin-left: 55%;
+}
+
 
 .task .controls {
   grid-area: controls;
+  z-index: -2;
    border-left: 1px grey solid;
    display: grid;
    grid-template-columns: 20% 60% 20%;
