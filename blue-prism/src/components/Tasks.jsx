@@ -1,5 +1,6 @@
 import React from 'react';
 import Task from './Task';
+import '../css/Tasks.css';
 
 const Tasks = props => {
   return (

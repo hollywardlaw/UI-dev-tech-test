@@ -2,6 +2,7 @@ import React from 'react';
 import { IoIosSearch } from "react-icons/io";
 import { FiMenu, FiMoreHorizontal } from "react-icons/fi";
 import { IconContext } from "react-icons";
+import '../css/Header.css';
 
 
 

@@ -1,0 +1,94 @@
+
+.task .controls {
+  grid-area: controls;
+  z-index: -2;
+   border-left: 1px grey solid;
+   display: grid;
+   grid-template-columns: 20% 60% 20%;
+   grid-template-rows: 20% 25% 35% 20%;
+   grid-template-areas: "workers workers workers"
+                       "minus count plus"
+                       "rating rating rating"
+                       "bottom-bar bottom-bar bottom-bar"
+}
+
+.workers-assigned {
+  font-family: sans-serif;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.8);
+  grid-area: workers;
+  align-self: center;
+}
+
+.plus{
+  color: #3F7FBF;
+  grid-area: plus;
+  align-self: center;
+  justify-self: left;
+ 
+}
+.minus{
+  color: #3F7FBF;
+  grid-area: minus;
+  align-self: center;
+  justify-self: right;
+}
+
+.count {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0;
+  grid-area: count;
+  align-self: center;
+  justify-self: center;
+}
+
+.rating {
+  grid-area: rating;
+  padding: 0;
+  margin: 0;
+}
+
+.star {
+  font-size: 50px;
+   padding: 0;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.6);
+}
+.bottom-bar {
+  grid-area: bottom-bar;
+  padding: 0;
+  margin: 0;
+  z-index: -1;
+  background-color:  #275685;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 200;
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-template-areas: "settings unassigned"
+}
+
+.bottom-bar .settings {
+ grid-area: settings;
+ padding: 0;
+ margin-left: 1em;
+ text-align: center;
+ align-self: center;
+ justify-self: center;
+ border: 1px white solid;
+ border-radius: 100%;
+ font-size: 1.5em;
+}
+
+.bottom-bar .unassigned {
+  grid-area: unassigned;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  font-size: 1.5em;
+}

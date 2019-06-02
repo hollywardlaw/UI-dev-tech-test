@@ -1,0 +1,15 @@
+.form {
+  justify-self: left;
+text-align: left;
+
+ padding: 0;
+  margin: 1em;
+}
+
+.text-input {
+  width: 20em;
+  border: none;
+  font-family: sans-serif;
+  color: black;
+  font-size: 18px;
+}

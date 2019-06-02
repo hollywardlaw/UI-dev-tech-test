@@ -1,0 +1,85 @@
+.task {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 4em;
+  align-self: center;
+  justify-self: center;
+  width: 80%;
+  border: 1px grey solid;
+  border-radius: 8px;
+  box-shadow: -3px 3px 7px #888888;
+  height: 11em;
+  display: grid;
+  grid-template-columns: 70% 5% 25%;
+  grid-template-rows: 75% 25%;
+  grid-template-areas: "form play controls"
+                        "inspect play controls";
+  overflow: hidden;
+}
+
+
+.task .form {
+  grid-area: form;
+}
+
+.inspect {
+  grid-area: inspect;
+  display: flex;
+  flex-direction: row;
+}
+
+.task .inspect .progress-bar {
+  height: 35px;
+  width: 100%;
+	background:lightblue;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.task .inspect .progress-bar > span {
+  display: block;
+  height: 100%; 
+  border-radius: 10px;
+  background-color: #275685;
+  position: relative;
+  overflow: hidden;
+  animation: expandWidth 1s linear; 
+}
+@keyframes expandWidth {
+   0% { width: 0; }
+}
+
+.task .inspect .eye-logo {
+  color: #3F7FBF;
+  border: 1px #3F7FBF solid;
+  padding: 0.2em;
+  border-radius: 100%;
+  font-size: 1.5em;
+  margin-left: 0.4em;
+  margin-right: 0.2em;
+  align-self: center;
+}
+ 
+.task .play {
+  grid-area: play;
+  align-self: center;
+  font-size: 1.5em;
+  background-color: white;
+  border: 1px grey solid;
+  border-radius: 100%;
+  padding: 0.2em;
+  color: grey;
+  margin-left: 55%;
+}
+
+.task .pause {
+  grid-area: play;
+  align-self: center;
+  font-size: 1.5em;
+  background-color: white;
+  border: 1px #275685 solid;
+  border-radius: 100%;
+  padding: 0.2em;
+  color: #275685;
+  margin-left: 55%;
+}
