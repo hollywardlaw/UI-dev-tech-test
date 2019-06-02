@@ -1,21 +1,46 @@
 import React, { Component } from 'react';
 import { FiMinusCircle, FiPlusCircle } from "react-icons/fi";
-import { TiStarOutline } from "react-icons/ti";
+import { TiStarOutline, TiStarFullOutline } from "react-icons/ti";
 import { IoIosSettings } from "react-icons/io";
 import '../css/Controls.css'
 
 class Controls extends Component {
   state = {
-    workers: 0
+    workers: 0,
+    star1Clicked: false,
+    star2Clicked: false,
+    star3Clciked: false
   }
   render() {
+    const { star1Clicked, star2Clicked, star3Clicked } = this.state;
     return (
       <div className="controls">
         <p className="workers-assigned">Workers assigned</p>
         <FiMinusCircle className="minus" onClick={event => this.handleClick('workers', -1)} />
         <p className="count">{this.state.workers} / 25</p>
         <FiPlusCircle className="plus" onClick={event => this.handleClick('workers', 1)} />
-        <p className="rating"><TiStarOutline className="star" /><TiStarOutline className="star" /><TiStarOutline className="star" /></p>
+        {star1Clicked && <p className="rating">
+          <TiStarFullOutline className="yellow-star" />
+          <TiStarOutline className="star" onClick={event => this.handleStarClick('star2Clicked', !star2Clicked)} />
+          <TiStarOutline className="star" onClick={event => this.handleStarClick('star3Clicked', !star3Clicked)} />
+        </p>}
+        {star2Clicked && <p className="rating">
+          <TiStarFullOutline className="yellow-star" />
+          <TiStarFullOutline className="yellow-star" />
+          <TiStarOutline className="star" onClick={event => this.handleStarClick('star3Clicked', !star3Clicked)} />
+        </p>}
+        {star3Clicked && <p className="rating">
+          <TiStarFullOutline className="yellow-star" />
+          <TiStarFullOutline className="yellow-star" />
+          <TiStarFullOutline className="yellow-star" />
+        </p>}
+        <p className="rating">
+          <TiStarOutline className="star" onClick={event => this.handleStarClick('star1Clicked', !star1Clicked)} />
+          <TiStarOutline className="star" onClick={event => this.handleStarClick('star2Clicked', !star2Clicked)} />
+          <TiStarOutline className="star" onClick={event => this.handleStarClick('star3Clicked', !star3Clicked)} />
+        </p>
+
+
         <div className="bottom-bar">
 
           <IoIosSettings className="settings" />
@@ -34,7 +59,9 @@ class Controls extends Component {
       this.setState({ [key]: workers + value })
     }
   }
-
+  handleStarClick = (star, value) => {
+    this.setState({ [star]: [value] })
+  }
 };
 
 export default Controls;

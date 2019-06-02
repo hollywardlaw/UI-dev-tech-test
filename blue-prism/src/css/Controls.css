@@ -53,8 +53,16 @@
   font-size: 50px;
    padding: 0;
   margin: 0;
-  color: rgba(0, 0, 0, 0.6);
+  color: darkgrey;
 }
+
+.yellow-star {
+  font-size: 50px;
+   padding: 0;
+  margin: 0;
+  color: yellow;
+}
+
 .bottom-bar {
   grid-area: bottom-bar;
   padding: 0;
