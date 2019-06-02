@@ -124,6 +124,10 @@ overflow: scroll;
 .task .form {
   grid-area: form;
 }
+
+.task .form .inspect {
+  color: #3F7FBF;
+}
  
 .task .play {
   grid-area: play;
@@ -134,6 +138,18 @@ overflow: scroll;
   border-radius: 100%;
   padding: 0.2em;
   color: grey;
+  margin-left: 55%;
+}
+
+.task .pause {
+  grid-area: play;
+  align-self: center;
+  font-size: 1.5em;
+  background-color: white;
+  border: 1px #275685 solid;
+  border-radius: 100%;
+  padding: 0.2em;
+  color: #275685;
   margin-left: 55%;
 }
 

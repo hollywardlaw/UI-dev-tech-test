@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import { FiMinusCircle, FiPlusCircle } from "react-icons/fi";
 import { TiStarOutline } from "react-icons/ti";
-import { IoIosSettings, IoIosPlay } from "react-icons/io";
+import { IoIosSettings, IoIosPlay, IoIosPause, IoMdEye } from "react-icons/io";
 
 
 class Task extends Component {
   state = {
     taskName: '',
-    processDescription: ''
+    processDescription: '',
+    play: false
   };
   render() {
+    console.log(this.state.play)
     return (
       <div>
         <section className="task">
@@ -18,8 +20,9 @@ class Task extends Component {
             <input className="input" type="input" onChange={event => this.handleChange('taskName', event.target.value)} required />
             <input className="text-input"
               placeholder="Process description" onChange={event => this.handleChange('processDescription', event.target.value)} required></input>
+            {this.state.play && <IoMdEye className="inspect" />}
           </form>
-          <IoIosPlay className="play" />
+          {!this.state.play ? <IoIosPlay className="play" onClick={this.handleClick} /> : <IoIosPause className="pause" onClick={this.handleClick} />}
           <div className="controls">
 
             <p className="workers-assigned">Workers assigned</p>
@@ -45,7 +48,9 @@ class Task extends Component {
     });
   };
 
-
+  handleClick = e => {
+    this.setState({ play: !this.state.play })
+  }
 }
 
 export default Task;
