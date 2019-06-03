@@ -1,14 +1,14 @@
 .task {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: 4em;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 4rem;
   align-self: center;
   justify-self: center;
   width: 80%;
   border: 1px grey solid;
   border-radius: 8px;
   box-shadow: -3px 3px 7px #888888;
-  height: 11em;
+  height: 11rem;
   display: grid;
   grid-template-columns: 70% 5% 25%;
   grid-template-rows: 75% 25%;
@@ -52,22 +52,22 @@
 .task .inspect .eye-logo {
   color: #3F7FBF;
   border: 1px #3F7FBF solid;
-  padding: 0.2em;
+  padding: 0.2rem;
   border-radius: 100%;
-  font-size: 1.5em;
-  margin-left: 0.4em;
-  margin-right: 0.2em;
+  font-size: 1.5rem;
+  margin-left: 0.4rem;
+  margin-right: 0.2rem;
   align-self: center;
 }
  
 .task .play {
   grid-area: play;
   align-self: center;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   background-color: white;
   border: 1px grey solid;
   border-radius: 100%;
-  padding: 0.2em;
+  padding: 0.2rem;
   color: grey;
   margin-left: 55%;
   z-index: 1;
@@ -76,11 +76,11 @@
 .task .pause {
   grid-area: play;
   align-self: center;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   background-color: white;
   border: 1px #275685 solid;
   border-radius: 100%;
-  padding: 0.2em;
+  padding: 0.2rem;
   color: #275685;
   margin-left: 55%;
   z-index: 1;
