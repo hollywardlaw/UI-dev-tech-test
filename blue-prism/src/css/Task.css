@@ -1,3 +1,4 @@
+
 .task {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -102,8 +103,34 @@
   font-size: 10px;
 }
 
-ul li {
+.list-item {
   display:inline-block;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.setting-div {
+  margin-left: 35rem;
+  width: 20%;
+}
+
+.speech-bubble {
+	position: relative;
+	background: #3F7FBF;
+  border-radius: .4em;
+height: 100px;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 0.281em solid transparent;
+	border-bottom-color: #3F7FBF;
+	border-top: 0;
+	margin-left: -0.281em;
+	margin-top: -0.281em;
 }

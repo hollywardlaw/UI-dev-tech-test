@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { FiMinusCircle, FiPlusCircle } from "react-icons/fi";
-import { TiStarOutline, TiStarFullOutline } from "react-icons/ti";
 import { IoIosSettings } from "react-icons/io";
+import { TiStarOutline, TiStarFullOutline } from "react-icons/ti";
 import '../css/Controls.css'
 
 class Controls extends Component {
@@ -9,9 +9,10 @@ class Controls extends Component {
     workers: 0,
     star1Clicked: false,
     star2Clicked: false,
-    star3Clciked: false
+    star3Clicked: false,
   }
   render() {
+
     const { workers, star1Clicked, star2Clicked, star3Clicked } = this.state;
     return (
       <div className="controls">
@@ -19,6 +20,8 @@ class Controls extends Component {
         <FiMinusCircle className="minus" onClick={event => this.handleClick('workers', -1)} />
         <p className="count">{workers} / 25</p>
         <FiPlusCircle className="plus" onClick={event => this.handleClick('workers', 1)} />
+
+
         {star1Clicked && <p className="rating">
           <TiStarFullOutline className="yellow-star" onClick={event => this.handleStarClick('star1Clicked', !star1Clicked)} />
           <TiStarOutline className="star" onClick={event => this.handleStarClick('star2Clicked', !star2Clicked)} />
@@ -43,7 +46,7 @@ class Controls extends Component {
 
         <div className="bottom-bar">
 
-          <IoIosSettings className="settings" />
+          <IoIosSettings className="settings" onClick={this.props.handleSettingsClick} />
           {workers > 0 ? <p className="assigned-unassigned"
           >Assigned</p> : <p className="assigned-unassigned"
           >Unassigned</p>}
@@ -52,8 +55,6 @@ class Controls extends Component {
       </div>
     );
   }
-
-
   handleClick = (key, value) => {
     const { workers } = this.state
     if (workers + value >= 0 && workers + value <= 25) {
