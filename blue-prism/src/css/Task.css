@@ -1,11 +1,11 @@
-
+@media only screen and (min-width: 1200px) {
 .task {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   margin-left: 4rem;
   align-self: center;
   justify-self: center;
-  width: 80%;
+  width: 800px;
   border: 1px grey solid;
   border-radius: 8px;
   box-shadow: -3px 3px 7px #888888;
@@ -111,14 +111,17 @@
 
 .setting-div {
   margin-left: 35rem;
-  width: 20%;
+  width: 25%;
+  text-align: center; 
+z-index: 1;
 }
 
 .speech-bubble {
 	position: relative;
-	background: #3F7FBF;
+  background: #3F7FBF;
+  border: 1px #3F7FBF solid;
   border-radius: .4em;
-height: 100px;
+    box-shadow: -3px 3px 7px #888888;
 }
 
 .speech-bubble:after {
@@ -132,5 +135,1260 @@ height: 100px;
 	border-bottom-color: #3F7FBF;
 	border-top: 0;
 	margin-left: -0.281em;
-	margin-top: -0.281em;
+  margin-top: -0.281em;
+
+}
+
+.setting-options {
+  list-style: none;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.setting-item {
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: #3F7FBF;
+  background-color: white;
+}
+
+.setting-item1 {
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  border-top-left-radius: .4rem;
+  border-top-right-radius: .4rem;
+  color: #3F7FBF;
+  background-color: white;
+}
+
+.setting-item4 {
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: #3F7FBF;
+  background-color: white;
+  border-bottom-left-radius: .4rem;
+  border-bottom-right-radius: .4rem;
+}
+
+.setting-item:hover{
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: white;
+  background-color: #3F7FBF;
+}
+
+.setting-item1:hover{
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: white;
+  background-color: #3F7FBF;
+}
+
+.setting-item4:hover{
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: white;
+  background-color: #3F7FBF;
+}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+.task {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 4rem;
+  align-self: center;
+  justify-self: center;
+  width: 650px;
+  border: 1px grey solid;
+  border-radius: 8px;
+  box-shadow: -3px 3px 7px #888888;
+  height: 11rem;
+  display: grid;
+  grid-template-columns: 70% 5% 25%;
+  grid-template-rows: 75% 25%;
+  grid-template-areas: "form play controls"
+                        "inspect play controls";
+  overflow: hidden;
+}
+
+
+.task .form {
+  grid-area: form;
+}
+
+.inspect {
+  grid-area: inspect;
+  display: flex;
+  flex-direction: row;
+}
+
+.task .inspect .progress-bar {
+  height: 35px;
+  width: 100%;
+	background:lightblue;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.task .inspect .progress-bar > span {
+  display: block;
+  height: 100%; 
+  border-radius: 10px;
+  background-color: #3F7FBF;
+  position: relative;
+  overflow: hidden;
+  animation: expandWidth 1s linear; 
+}
+@keyframes expandWidth {
+   0% { width: 0; }
+}
+
+.task .inspect .eye-logo {
+  color: #3F7FBF;
+  border: 1px #3F7FBF solid;
+  padding: 0.2rem;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-left: 0.4rem;
+  margin-right: 0.2rem;
+  align-self: center;
+}
+ 
+.task .play {
+  grid-area: play;
+  align-self: center;
+  font-size: 1.5rem;
+  background-color: white;
+  border: 1px grey solid;
+  border-radius: 100%;
+  padding: 0.2rem;
+  color: grey;
+  margin-left: 55%;
+  z-index: 1;
+}
+
+.task .pause {
+  grid-area: play;
+  align-self: center;
+  font-size: 1.5rem;
+  background-color: white;
+  border: 1px #275685 solid;
+  border-radius: 100%;
+  padding: 0.2rem;
+  color: #275685;
+  margin-left: 55%;
+  z-index: 1;
+}
+
+.task .inspect .gradient-bar {
+  height: 35px;
+  width: 100%;
+	background-image: linear-gradient(to right, #3F7FBF 75%, lightblue);
+  border-radius: 10px;
+  align-self: center;
+}
+
+.list {
+  list-style: none;
+  font-family: sans-serif;
+  padding-top: 5px;
+  margin: 0;
+  font-size: 10px;
+}
+
+.list-item {
+  display:inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.setting-div {
+  margin-left: 27rem;
+  width: 30%;
+  text-align: center; 
+}
+
+.speech-bubble {
+	position: relative;
+  background: #3F7FBF;
+  border: 1px #3F7FBF solid;
+  border-radius: .4em;
+    box-shadow: -3px 3px 7px #888888;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 0.281em solid transparent;
+	border-bottom-color: #3F7FBF;
+	border-top: 0;
+	margin-left: -0.281em;
+  margin-top: -0.281em;
+
+}
+
+.setting-options {
+  list-style: none;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.setting-item {
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: #3F7FBF;
+  background-color: white;
+}
+
+.setting-item1 {
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  border-top-left-radius: .4rem;
+  border-top-right-radius: .4rem;
+  color: #3F7FBF;
+  background-color: white;
+}
+
+.setting-item4 {
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: #3F7FBF;
+  background-color: white;
+  border-bottom-left-radius: .4rem;
+  border-bottom-right-radius: .4rem;
+}
+
+.setting-item:hover{
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: white;
+  background-color: #3F7FBF;
+}
+
+.setting-item1:hover{
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: white;
+  background-color: #3F7FBF;
+}
+
+.setting-item4:hover{
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: white;
+  background-color: #3F7FBF;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .task {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  align-self: center;
+  justify-self: center;
+  width: 95%;
+  border: 1px grey solid;
+  border-radius: 8px;
+  box-shadow: -3px 3px 7px #888888;
+  height: 9.5rem;
+  display: grid;
+  grid-template-columns: 60% 5% 35%;
+  grid-template-rows: 75% 25%;
+  grid-template-areas: "form play controls"
+                        "inspect play controls";
+  overflow: hidden;
+}
+
+
+.task .form {
+  grid-area: form;
+}
+
+.inspect {
+  grid-area: inspect;
+  display: flex;
+  flex-direction: row;
+}
+
+.task .inspect .progress-bar {
+  height: 35px;
+  width: 100%;
+	background:lightblue;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.task .inspect .progress-bar > span {
+  display: block;
+  height: 100%; 
+  border-radius: 10px;
+  background-color: #3F7FBF;
+  position: relative;
+  overflow: hidden;
+  animation: expandWidth 1s linear; 
+}
+@keyframes expandWidth {
+   0% { width: 0; }
+}
+
+.task .inspect .eye-logo {
+  color: #3F7FBF;
+  border: 1px #3F7FBF solid;
+  padding: 0.2rem;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-left: 0.4rem;
+  margin-right: 0.2rem;
+  align-self: center;
+}
+ 
+.task .play {
+  grid-area: play;
+  align-self: center;
+  font-size: 1.5rem;
+  background-color: white;
+  border: 1px grey solid;
+  border-radius: 100%;
+  padding: 0.2rem;
+  color: grey;
+  margin-left: 40%;
+  z-index: 1;
+}
+
+.task .pause {
+  grid-area: play;
+  align-self: center;
+  font-size: 1.5rem;
+  background-color: white;
+  border: 1px #275685 solid;
+  border-radius: 100%;
+  padding: 0.2rem;
+  color: #275685;
+  margin-left: 40%;
+  z-index: 1;
+}
+
+.task .inspect .gradient-bar {
+  height: 35px;
+  width: 100%;
+	background-image: linear-gradient(to right, #3F7FBF 75%, lightblue);
+  border-radius: 10px;
+  align-self: center;
+}
+
+.list {
+  list-style: none;
+  font-family: sans-serif;
+  padding-top: 5px;
+   margin: 0;
+  font-size: 9px;
+}
+
+.list-item {
+  display:inline-block;
+  padding-right: 20px;
+}
+
+.setting-div {
+  margin-left: 20rem;
+  width: 30%;
+  text-align: center; 
+}
+
+.speech-bubble {
+	position: relative;
+  background: #3F7FBF;
+  border: 1px #3F7FBF solid;
+  border-radius: .4em;
+    box-shadow: -3px 3px 7px #888888;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 0.281em solid transparent;
+	border-bottom-color: #3F7FBF;
+	border-top: 0;
+	margin-left: -0.281em;
+  margin-top: -0.281em;
+
+}
+
+.setting-options {
+  list-style: none;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.setting-item {
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: #3F7FBF;
+  background-color: white;
+}
+
+.setting-item1 {
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  border-top-left-radius: .4rem;
+  border-top-right-radius: .4rem;
+  color: #3F7FBF;
+  background-color: white;
+}
+
+.setting-item4 {
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: #3F7FBF;
+  background-color: white;
+  border-bottom-left-radius: .4rem;
+  border-bottom-right-radius: .4rem;
+}
+
+.setting-item:hover{
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: white;
+  background-color: #3F7FBF;
+}
+
+.setting-item1:hover{
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: white;
+  background-color: #3F7FBF;
+}
+
+.setting-item4:hover{
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: white;
+  background-color: #3F7FBF;
+}
+}
+
+@media only screen and (min-width: 670px) and (max-width: 768px) {
+  .task {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 3rem;
+  align-self: center;
+  justify-self: center;
+  width: 85%;
+  border: 1px grey solid;
+  border-radius: 8px;
+  box-shadow: -3px 3px 7px #888888;
+  height: 8rem;
+  display: grid;
+  grid-template-columns: 55% 5% 40%;
+  grid-template-rows: 70% 30%;
+  grid-template-areas: "form play controls"
+                        "inspect play controls";
+  overflow: hidden;
+}
+
+
+.task .form {
+  grid-area: form;
+}
+
+.inspect {
+  grid-area: inspect;
+  display: flex;
+  flex-direction: row;
+}
+
+.task .inspect .progress-bar {
+  height: 35px;
+  width: 100%;
+	background:lightblue;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.task .inspect .progress-bar > span {
+  display: block;
+  height: 100%; 
+  border-radius: 10px;
+  background-color: #3F7FBF;
+  position: relative;
+  overflow: hidden;
+  animation: expandWidth 1s linear; 
+}
+@keyframes expandWidth {
+   0% { width: 0; }
+}
+
+.task .inspect .eye-logo {
+  color: #3F7FBF;
+  border: 1px #3F7FBF solid;
+  padding: 0.2rem;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-left: 0.4rem;
+  margin-right: 0.2rem;
+  align-self: center;
+}
+ 
+.task .play {
+  grid-area: play;
+  align-self: center;
+  font-size: 1.5rem;
+  background-color: white;
+  border: 1px grey solid;
+  border-radius: 100%;
+  padding: 0.2rem;
+  color: grey;
+  margin-left: 45%;
+  z-index: 2;
+}
+
+.task .pause {
+  grid-area: play;
+  align-self: center;
+  font-size: 1.5rem;
+  background-color: white;
+  border: 1px #275685 solid;
+  border-radius: 100%;
+  padding: 0.2rem;
+  color: #275685;
+  margin-left: 45%;
+  z-index: 2;
+}
+
+.task .inspect .gradient-bar {
+  height: 35px;
+  width: 100%;
+	background-image: linear-gradient(to right, #3F7FBF 75%, lightblue);
+  border-radius: 10px;
+  align-self: center;
+}
+
+.list {
+  list-style: none;
+  font-family: sans-serif;
+  padding-top: 5px;
+   margin: 0;
+  font-size: 10px;
+}
+
+.list-item {
+  display:inline-block;
+  padding-right: 20px;
+}
+
+.setting-div {
+  margin-left: 20rem;
+  width: 30%;
+  text-align: center; 
+}
+
+.speech-bubble {
+	position: relative;
+  background: #3F7FBF;
+  border: 1px #3F7FBF solid;
+  border-radius: .4em;
+    box-shadow: -3px 3px 7px #888888;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 0.281em solid transparent;
+	border-bottom-color: #3F7FBF;
+	border-top: 0;
+	margin-left: -0.281em;
+  margin-top: -0.281em;
+
+}
+
+.setting-options {
+  list-style: none;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.setting-item {
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: #3F7FBF;
+  background-color: white;
+}
+
+.setting-item1 {
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  border-top-left-radius: .4rem;
+  border-top-right-radius: .4rem;
+  color: #3F7FBF;
+  background-color: white;
+}
+
+.setting-item4 {
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: #3F7FBF;
+  background-color: white;
+  border-bottom-left-radius: .4rem;
+  border-bottom-right-radius: .4rem;
+}
+
+.setting-item:hover{
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: white;
+  background-color: #3F7FBF;
+}
+
+.setting-item1:hover{
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: white;
+  background-color: #3F7FBF;
+}
+
+.setting-item4:hover{
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: white;
+  background-color: #3F7FBF;
+}
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 670px) {
+  .task {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 3rem;
+  align-self: center;
+  justify-self: center;
+  width: 85%;
+  border: 1px grey solid;
+  border-radius: 8px;
+  box-shadow: -3px 3px 7px #888888;
+  height: 8rem;
+  display: grid;
+  grid-template-columns: 55% 5% 40%;
+  grid-template-rows: 70% 30%;
+  grid-template-areas: "form play controls"
+                        "inspect play controls";
+  overflow: hidden;
+}
+
+
+.task .form {
+  grid-area: form;
+}
+
+.inspect {
+  grid-area: inspect;
+  display: flex;
+  flex-direction: row;
+}
+
+.task .inspect .progress-bar {
+  height: 35px;
+  width: 100%;
+	background:lightblue;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.task .inspect .progress-bar > span {
+  display: block;
+  height: 100%; 
+  border-radius: 10px;
+  background-color: #3F7FBF;
+  position: relative;
+  overflow: hidden;
+  animation: expandWidth 1s linear; 
+}
+@keyframes expandWidth {
+   0% { width: 0; }
+}
+
+.task .inspect .eye-logo {
+  color: #3F7FBF;
+  border: 1px #3F7FBF solid;
+  padding: 0.2rem;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-left: 0.4rem;
+  margin-right: 0.2rem;
+  align-self: center;
+}
+ 
+.task .play {
+  grid-area: play;
+  align-self: center;
+  font-size: 1.5rem;
+  background-color: white;
+  border: 1px grey solid;
+  border-radius: 100%;
+  padding: 0.2rem;
+  color: grey;
+  margin-left: 45%;
+  z-index: 2;
+}
+
+.task .pause {
+  grid-area: play;
+  align-self: center;
+  font-size: 1.5rem;
+  background-color: white;
+  border: 1px #275685 solid;
+  border-radius: 100%;
+  padding: 0.2rem;
+  color: #275685;
+  margin-left: 45%;
+  z-index: 2;
+}
+
+.task .inspect .gradient-bar {
+  height: 35px;
+  width: 100%;
+	background-image: linear-gradient(to right, #3F7FBF 75%, lightblue);
+  border-radius: 10px;
+  align-self: center;
+}
+
+.list {
+  list-style: none;
+  font-family: sans-serif;
+  padding-top: 5px;
+   margin: 0;
+  font-size: 9.2px;
+}
+
+.list-item {
+  display:inline-block;
+  padding-right: 20px;
+}
+
+.setting-div {
+  margin-left: 20rem;
+  width: 30%;
+  text-align: center; 
+}
+
+.speech-bubble {
+	position: relative;
+  background: #3F7FBF;
+  border: 1px #3F7FBF solid;
+  border-radius: .4em;
+    box-shadow: -3px 3px 7px #888888;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 0.281em solid transparent;
+	border-bottom-color: #3F7FBF;
+	border-top: 0;
+	margin-left: -0.281em;
+  margin-top: -0.281em;
+
+}
+
+.setting-options {
+  list-style: none;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.setting-item {
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: #3F7FBF;
+  background-color: white;
+}
+
+.setting-item1 {
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  border-top-left-radius: .4rem;
+  border-top-right-radius: .4rem;
+  color: #3F7FBF;
+  background-color: white;
+}
+
+.setting-item4 {
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: #3F7FBF;
+  background-color: white;
+  border-bottom-left-radius: .4rem;
+  border-bottom-right-radius: .4rem;
+}
+
+.setting-item:hover{
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: white;
+  background-color: #3F7FBF;
+}
+
+.setting-item1:hover{
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: white;
+  background-color: #3F7FBF;
+}
+
+.setting-item4:hover{
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: white;
+  background-color: #3F7FBF;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  .task {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 3rem;
+  align-self: center;
+  justify-self: center;
+  width: 85%;
+  border: 1px grey solid;
+  border-radius: 8px;
+  box-shadow: -3px 3px 7px #888888;
+  height: 8rem;
+  display: grid;
+  grid-template-columns: 55% 5% 40%;
+  grid-template-rows: 70% 30%;
+  grid-template-areas: "form play controls"
+                        "inspect play controls";
+  overflow: hidden;
+}
+
+
+.task .form {
+  grid-area: form;
+}
+
+.inspect {
+  grid-area: inspect;
+  display: flex;
+  flex-direction: row;
+}
+
+.task .inspect .progress-bar {
+  height: 35px;
+  width: 100%;
+	background:lightblue;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.task .inspect .progress-bar > span {
+  display: block;
+  height: 100%; 
+  border-radius: 10px;
+  background-color: #3F7FBF;
+  position: relative;
+  overflow: hidden;
+  animation: expandWidth 1s linear; 
+}
+@keyframes expandWidth {
+   0% { width: 0; }
+}
+
+.task .inspect .eye-logo {
+  color: #3F7FBF;
+  border: 1px #3F7FBF solid;
+  padding: 0.2rem;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-left: 0.4rem;
+  margin-right: 0.2rem;
+  align-self: center;
+}
+ 
+.task .play {
+  grid-area: play;
+  align-self: center;
+  font-size: 1.5rem;
+  background-color: white;
+  border: 1px grey solid;
+  border-radius: 100%;
+  padding: 0.2rem;
+  color: grey;
+  margin-left: 40%;
+  z-index: 2;
+}
+
+.task .pause {
+  grid-area: play;
+  align-self: center;
+  font-size: 1.5rem;
+  background-color: white;
+  border: 1px #275685 solid;
+  border-radius: 100%;
+  padding: 0.2rem;
+  color: #275685;
+  margin-left: 40%;
+  z-index: 2;
+}
+
+.task .inspect .gradient-bar {
+  height: 35px;
+  width: 100%;
+	background-image: linear-gradient(to right, #3F7FBF 75%, lightblue);
+  border-radius: 10px;
+  align-self: center;
+}
+
+.list {
+  list-style: none;
+  font-family: sans-serif;
+  padding-top: 5px;
+   margin: 0;
+  font-size: 9px;
+}
+
+.list-item {
+  display:inline-block;
+}
+
+.setting-div {
+  margin-left: 20rem;
+  width: 30%;
+  text-align: center; 
+}
+
+.speech-bubble {
+	position: relative;
+  background: #3F7FBF;
+  border: 1px #3F7FBF solid;
+  border-radius: .4em;
+    box-shadow: -3px 3px 7px #888888;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 0.281em solid transparent;
+	border-bottom-color: #3F7FBF;
+	border-top: 0;
+	margin-left: -0.281em;
+  margin-top: -0.281em;
+
+}
+
+.setting-options {
+  list-style: none;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.setting-item {
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: #3F7FBF;
+  background-color: white;
+}
+
+.setting-item1 {
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  border-top-left-radius: .4rem;
+  border-top-right-radius: .4rem;
+  color: #3F7FBF;
+  background-color: white;
+}
+
+.setting-item4 {
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: #3F7FBF;
+  background-color: white;
+  border-bottom-left-radius: .4rem;
+  border-bottom-right-radius: .4rem;
+}
+
+.setting-item:hover{
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: white;
+  background-color: #3F7FBF;
+}
+
+.setting-item1:hover{
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: white;
+  background-color: #3F7FBF;
+}
+
+.setting-item4:hover{
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: white;
+  background-color: #3F7FBF;
+}
+}
+
+@media screen and (orientation: portrait) {
+  .task {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  align-self: center;
+  justify-self: center;
+  width: 90%;
+  border: 1px grey solid;
+  border-radius: 8px;
+  box-shadow: -3px 3px 7px #888888;
+  height: 10rem;
+  display: grid;
+  grid-template-columns: 55% 5% 40%;
+  grid-template-rows: 70% 30%;
+  grid-template-areas: "form play controls"
+                        "inspect play controls";
+  overflow: hidden;
+}
+
+
+.task .form {
+  grid-area: form;
+}
+
+.inspect {
+  grid-area: inspect;
+  display: flex;
+  flex-direction: row;
+}
+
+.task .inspect .progress-bar {
+  height: 35px;
+  width: 100%;
+	background:lightblue;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.task .inspect .progress-bar > span {
+  display: block;
+  height: 100%; 
+  border-radius: 10px;
+  background-color: #3F7FBF;
+  position: relative;
+  overflow: hidden;
+  animation: expandWidth 1s linear; 
+}
+@keyframes expandWidth {
+   0% { width: 0; }
+}
+
+.task .inspect .eye-logo {
+  color: #3F7FBF;
+  border: 1px #3F7FBF solid;
+  padding: 0.2rem;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-left: 0.4rem;
+  margin-right: 0.2rem;
+  align-self: center;
+}
+ 
+.task .play {
+  grid-area: play;
+  align-self: center;
+  font-size: 1rem;
+  background-color: white;
+  border: 1px grey solid;
+  border-radius: 100%;
+  padding: 0.2rem;
+  color: grey;
+  margin-left: 40%;
+  z-index: 2;
+}
+
+.task .pause {
+  grid-area: play;
+  align-self: center;
+  font-size: 1rem;
+  background-color: white;
+  border: 1px #275685 solid;
+  border-radius: 100%;
+  padding: 0.2rem;
+  color: #275685;
+  margin-left: 40%;
+  z-index: 2;
+}
+
+.task .inspect .gradient-bar {
+  height: 35px;
+  width: 100%;
+	background-image: linear-gradient(to right, #3F7FBF 75%, lightblue);
+  border-radius: 10px;
+  align-self: center;
+}
+
+.list {
+  list-style: none;
+  font-family: sans-serif;
+  padding-top: 2px;
+   margin: 0;
+  font-size: 7px;
+}
+
+.list-item {
+  display:inline-block;
+}
+
+.setting-div {
+  margin-left: 10rem;
+  width: 40%;
+  text-align: center; 
+}
+
+.speech-bubble {
+	position: relative;
+  background: #3F7FBF;
+  border: 1px #3F7FBF solid;
+  border-radius: .4em;
+    box-shadow: -3px 3px 7px #888888;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 0.281em solid transparent;
+	border-bottom-color: #3F7FBF;
+	border-top: 0;
+	margin-left: -0.281em;
+  margin-top: -0.281em;
+
+}
+
+.setting-options {
+  list-style: none;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.setting-item {
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: #3F7FBF;
+  background-color: white;
+}
+
+.setting-item1 {
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  border-top-left-radius: .4rem;
+  border-top-right-radius: .4rem;
+  color: #3F7FBF;
+  background-color: white;
+}
+
+.setting-item4 {
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: #3F7FBF;
+  background-color: white;
+  border-bottom-left-radius: .4rem;
+  border-bottom-right-radius: .4rem;
+}
+
+.setting-item:hover{
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: white;
+  background-color: #3F7FBF;
+}
+
+.setting-item1:hover{
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: white;
+  background-color: #3F7FBF;
+}
+
+.setting-item4:hover{
+  padding: 3.5px;
+  margin: 0;
+  border: 1px #3F7FBF solid;
+  color: white;
+  background-color: #3F7FBF;
+}
 }

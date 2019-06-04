@@ -10,6 +10,7 @@ class Task extends Component {
     play: false,
     inspect: false,
     settingsClicked: false,
+    focus: false
   };
   render() {
     const { play, inspect, settingsClicked } = this.state;
@@ -31,13 +32,13 @@ class Task extends Component {
           <Controls handleSettingsClick={this.handleSettingsClick} />
 
         </section>
-        {settingsClicked && <div className="setting-div">
-          <div class="speech-bubble">
+        {settingsClicked && <div className="setting-div" >
+          <div className="speech-bubble">
             <ul className="setting-options">
-              <li >Auto-assign</li>
-              <li>Select workers</li>
-              <li>Schedule</li>
-              <li>Archive</li>
+              <li className="setting-item1">Auto-assign</li>
+              <li className="setting-item">Select workers</li>
+              <li className="setting-item">Schedule</li>
+              <li className="setting-item4">Archive</li>
             </ul>
           </div>
         </div>
@@ -49,7 +50,7 @@ class Task extends Component {
     this.setState({ [key]: value })
   }
   handleSettingsClick = () => {
-    this.setState({ settingsClicked: !this.state.settingsClicked })
+    this.setState({ settingsClicked: !this.state.settingsClicked, focus: !this.state.focus })
   }
 }
 
