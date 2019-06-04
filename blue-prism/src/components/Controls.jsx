@@ -17,36 +17,36 @@ class Controls extends Component {
     return (
       <div className="controls">
         <p className="workers-assigned">Workers assigned</p>
-        <FiMinusCircle className="minus" onClick={event => this.handleClick('workers', -1)} />
+        <FiMinusCircle className="minus icon" onClick={event => this.handleClick('workers', -1)} alt="minus" />
         <p className="count">{workers} / 25</p>
-        <FiPlusCircle className="plus" onClick={event => this.handleClick('workers', 1)} />
+        <FiPlusCircle className="plus" onClick={event => this.handleClick('workers', 1)} alt="plus icon" />
 
 
         {star1Clicked && <p className="rating">
-          <TiStarFullOutline className="yellow-star" onClick={event => this.handleStarClick('star1Clicked', !star1Clicked)} />
-          <TiStarOutline className="star" onClick={event => this.handleStarClick('star2Clicked', !star2Clicked)} />
-          <TiStarOutline className="star" onClick={event => this.handleStarClick('star3Clicked', !star3Clicked)} />
+          <TiStarFullOutline alt="yellow star icon" className="yellow-star" onClick={event => this.handleStarClick('star1Clicked', !star1Clicked)} />
+          <TiStarOutline alt="star icon" className="star" onClick={event => this.handleStarClick('star2Clicked', !star2Clicked)} />
+          <TiStarOutline alt="star icon" className="star" onClick={event => this.handleStarClick('star3Clicked', !star3Clicked)} />
         </p>}
         {star2Clicked && <p className="rating">
-          <TiStarFullOutline className="yellow-star" onClick={event => this.handleStarClick('star1Clicked', !star1Clicked)} />
-          <TiStarFullOutline className="yellow-star" onClick={event => this.handleStarClick('star2Clicked', !star2Clicked)} />
-          <TiStarOutline className="star" onClick={event => this.handleStarClick('star3Clicked', !star3Clicked)} />
+          <TiStarFullOutline alt="yellow star icon" className="yellow-star" onClick={event => this.handleStarClick('star1Clicked', !star1Clicked)} />
+          <TiStarFullOutline alt="yellow star icon" className="yellow-star" onClick={event => this.handleStarClick('star2Clicked', !star2Clicked)} />
+          <TiStarOutline alt="star icon" className="star" onClick={event => this.handleStarClick('star3Clicked', !star3Clicked)} />
         </p>}
         {star3Clicked && <p className="rating">
-          <TiStarFullOutline className="yellow-star" onClick={event => this.handleStarClick('star1Clicked', !star1Clicked)} />
-          <TiStarFullOutline className="yellow-star" onClick={event => this.handleStarClick('star2Clicked', !star2Clicked)} />
-          <TiStarFullOutline className="yellow-star" onClick={event => this.handleStarClick('star3Clicked', !star3Clicked)} />
+          <TiStarFullOutline alt="yellow star icon" className="yellow-star" onClick={event => this.handleStarClick('star1Clicked', !star1Clicked)} />
+          <TiStarFullOutline alt="yellow star icon" className="yellow-star" onClick={event => this.handleStarClick('star2Clicked', !star2Clicked)} />
+          <TiStarFullOutline alt="yellow star icon" className="yellow-star" onClick={event => this.handleStarClick('star3Clicked', !star3Clicked)} />
         </p>}
 
         <p className="rating">
-          <TiStarOutline className="star" onClick={event => this.handleStarClick('star1Clicked', !star1Clicked)} />
-          <TiStarOutline className="star" onClick={event => this.handleStarClick('star2Clicked', !star2Clicked)} />
-          <TiStarOutline className="star" onClick={event => this.handleStarClick('star3Clicked', !star3Clicked)} />
+          <TiStarOutline alt="star icon" className="star" onClick={event => this.handleStarClick('star1Clicked', !star1Clicked)} />
+          <TiStarOutline alt="star icon" className="star" onClick={event => this.handleStarClick('star2Clicked', !star2Clicked)} />
+          <TiStarOutline alt="star icon" className="star" onClick={event => this.handleStarClick('star3Clicked', !star3Clicked)} />
         </p>
 
         <div className="bottom-bar">
 
-          <IoIosSettings className="settings" onClick={this.props.handleSettingsClick} />
+          <IoIosSettings alt="settings icon" className="settings" onClick={this.props.handleSettingsClick} />
           {workers > 0 ? <p className="assigned-unassigned"
           >Assigned</p> : <p className="assigned-unassigned"
           >Unassigned</p>}

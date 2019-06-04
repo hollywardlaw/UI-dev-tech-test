@@ -15,7 +15,13 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "plugin:jsx-a11y/strict"
+    ],
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "parser": "babel-eslint"
   },
   "browserslist": {
     "production": [
@@ -28,5 +34,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1"
   }
 }

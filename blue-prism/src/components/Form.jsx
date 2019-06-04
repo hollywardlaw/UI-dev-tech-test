@@ -9,10 +9,10 @@ class Form extends Component {
   render() {
     return (
       <form className="form" >
-        <label className="label">Add task</label><br></br>
-        <input className="input" type="input" onChange={event => this.handleChange('taskName', event.target.value)} required />
-        <input className="text-input"
-          placeholder="Process description" onChange={event => this.handleChange('processDescription', event.target.value)} required></input>
+        <label htmlFor="add-task" className="label">Add task<br></br>
+          <input id="add-task" className="input" type="input" onChange={event => this.handleChange('taskName', event.target.value)} required />
+          <input className="text-input"
+            placeholder="Process description" onChange={event => this.handleChange('processDescription', event.target.value)} required></input></label>
       </form>
 
     );

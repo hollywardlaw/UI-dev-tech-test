@@ -11,14 +11,14 @@ const Header = props => {
     <IconContext.Provider value={{ className: 'react-icons' }}>
       <header className="header">
 
-        <FiMenu className="menu" />
-        <IoIosSearch className="search" />
+        <FiMenu className="menu" alt="menu icon" />
+        <IoIosSearch className="search" alt="search icon" />
         <form className="form">
 
-          <label className="label">Search</label><br></br>
-          <input className="input" type="search" required />
+          <label htmlFor="search" className="label">Search<br></br>
+            <input id="search" className="input" type="search" required /></label>
         </form>
-        <FiMoreHorizontal className="more" />
+        <FiMoreHorizontal className="more" alt="more icon" />
       </header>
     </IconContext.Provider>
   );

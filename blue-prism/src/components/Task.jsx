@@ -18,16 +18,16 @@ class Task extends Component {
       <div>
         <section className="task">
           <Form />
-          {play && !inspect && <div className="inspect"> <IoMdEye className="eye-logo" onClick={event => this.handleClick('inspect', !inspect)} /> <div className="progress-bar"> <span style={{ width: "75%" }}></span></div></div>}
+          {play && !inspect && <div className="inspect"> <IoMdEye className="eye-logo" alt="eye icon" onClick={event => this.handleClick('inspect', !inspect)} /> <div className="progress-bar"> <span style={{ width: "75%" }}></span></div></div>}
 
-          {play && inspect && <div className="inspect"> <IoMdEye className="eye-logo" /> <div className="gradient-bar"> <ul className="list">
+          {play && inspect && <div className="inspect"> <IoMdEye alt="eye icon" className="eye-logo" /> <div className="gradient-bar"> <ul className="list">
             <li className="list-item">Tasks in queue: <b>6</b></li>
             <li className="list-item">Average task time: <b>12s</b></li><br></br>
             <li className="list-item">Tasks completed: <b>18</b></li>
             <li className="list-item">Time remaining: <b>01:12</b></li>
           </ul></div></div>}
 
-          {!play ? <IoIosPlay className="play" onClick={event => this.handleClick('play', !play)} /> : <IoIosPause className="pause" onClick={event => this.handleClick('play', !play)} />}
+          {!play ? <IoIosPlay alt="play icon" className="play" onClick={event => this.handleClick('play', !play)} /> : <IoIosPause alt="pause icon" className="pause" onClick={event => this.handleClick('play', !play)} />}
 
           <Controls handleSettingsClick={this.handleSettingsClick} />
 
