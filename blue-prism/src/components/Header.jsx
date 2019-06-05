@@ -14,7 +14,6 @@ const Header = props => {
         <FiMenu className="menu" alt="menu icon" />
         <IoIosSearch className="search" alt="search icon" />
         <form className="form">
-
           <label htmlFor="search" className="label">Search<br></br>
             <input id="search" className="input" type="search" required /></label>
         </form>
