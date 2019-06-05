@@ -49,6 +49,7 @@ class Task extends Component {
   handleClick = (key, value) => {
     this.setState({ [key]: value })
   }
+
   handleSettingsClick = () => {
     this.setState({ settingsClicked: !this.state.settingsClicked, focus: !this.state.focus })
   }
