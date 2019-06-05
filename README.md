@@ -34,7 +34,7 @@ Test suite - Jest and Enzyme
 
 ## Testing Accessibility
 
-To test accessibility I ran a audit with Lighthouse in Chrome Dev Tools, to make sure the app passed the accessibility tests - [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
+To test accessibility I ran an audit with Lighthouse in Chrome Dev Tools, to make sure the app passed the accessibility tests - [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
 
 I added an ES Lint extension to check for accessibility best practices - [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)
 
