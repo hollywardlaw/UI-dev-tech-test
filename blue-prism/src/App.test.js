@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import App from './App';
 import Header from './components/Header.jsx';
 import Tasks from './components/Tasks';
