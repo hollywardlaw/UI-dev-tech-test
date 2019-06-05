@@ -15,6 +15,8 @@ A working prototype of how a customer could assign a digital worker to tasks, ba
 
 ## To Run App
 
+Clone this repo then run
+
 ### `npm start`
 
 Runs the app in the development mode.<br>
