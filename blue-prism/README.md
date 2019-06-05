@@ -2,6 +2,8 @@
 
 A working prototype of how a customer could assign a digital worker to tasks, based on a Sketch design. 
 
+https://digital-worker-assigner.netlify.com/
+
 ## Features
 
 -Search bar <br>
